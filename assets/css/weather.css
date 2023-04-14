@@ -1,0 +1,173 @@
+/***** Variables *****/
+
+:root {
+    --main-color: #009ad8;
+    --second-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/***** End Variables *****/
+
+
+/***** Navbar *****/
+
+
+/***** logo *****/
+
+.navbar-brand h1 {
+    line-height: 10%;
+}
+
+.navbar-brand small {
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4 ease;
+}
+
+
+/*****  Tabs *****/
+
+.nav-item .nav-link {
+    width: 125px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 7px 25px;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+
+/***** End Navbar *****/
+
+
+/***** home *****/
+
+
+/***** home *****/
+
+#home {
+    padding: 1px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pexels-pixabay-258136.jpg);
+}
+
+@media (max-width:767px) {
+    #home {
+        height: 170vh;
+    }
+    .cd {
+        border-bottom: 2px solid black;
+    }
+}
+
+@media (min-width:767px) {
+    #home {
+        height: 100vh;
+    }
+    .cd {
+        border-right: 2px solid black;
+    }
+}
+
+
+/***** content *****/
+
+.content {
+    margin-top: 10rem;
+}
+
+
+/***** search *****/
+
+.find-location {
+    position: relative;
+    margin-bottom: 100px;
+    width: 70%;
+    left: 15%;
+}
+
+.find-location input[type="text"],
+.Subscribe input[type="text"] {
+    padding: 10px 0px 10px 30px;
+    background: var(--second-color);
+    border: 1px solid var(--second-color);
+    border-radius: 30px;
+    color: white;
+}
+
+.find-location input[type="submit"],
+.find-location input[type="button"],
+.Subscribe input[type="submit"],
+.Subscribe input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+
+.find-location input[type="button"],
+.Subscribe input[type="button"] {
+    background-color: var(--main-color);
+    border-radius: 0 30px 30px 0;
+}
+
+
+/***** Data Show *****/
+
+.showData {
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px var(--second-color);
+}
+
+.showData .cd:last-child {
+    border: none;
+}
+
+
+/***** End home *****/
+
+
+/***** Footer *****/
+
+.site-footer {
+    position: relative;
+    bottom: 0;
+}
+
+.Subscribe {
+    position: relative;
+}
+
+.site-footer .social-links a {
+    width: 35px;
+    height: 35px;
+    background-color: var(--second-color);
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 1.2rem;
+    border-radius: 100%;
+}
+
+.site-footer .social-links a:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+
+/***** End Footer *****/
